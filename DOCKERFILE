@@ -1,0 +1,28 @@
+#
+# Tesseract 4 OCR Runtime Environment - Docker Container
+# inspired by tesseract-shadow/tesseract-ocr-re
+#
+
+ FROM ubuntu:18.04
+ MAINTAINER sankar
+
+ #RUN apt-get update \
+ #&& apt-get install -y software-properties-common \
+ #&& add-apt-repository -y ppa:alex-p/tesseract-ocr
+
+ RUN apt-get update  \
+ && apt-get install -y software-properties-common \
+    tesseract-ocr-all \
+    vim \
+    ImageMagick \
+    poppler
+
+
+RUN mkdir /home/work
+WORKDIR /home/work
+INPDIR  /home/indir
+OUTDIR /home/outdir
+SCRDIR /home/scrdir
+BKUPDIR /home/bkupdir
+
+COPY ./scripts $SCRDIR
