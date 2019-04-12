@@ -20,9 +20,14 @@
 
 RUN mkdir /home/work
 WORKDIR /home/work
-INPDIR  /home/indir
-OUTDIR /home/outdir
-SCRDIR /home/scrdir
-BKUPDIR /home/bkupdir
+ENV INPDIR  /home/indir
+ENV OUTDIR /home/outdir
+ENV SCRDIR /home/scrdir
+ENV BKUPDIR /home/bkupdir
+
+RUN mkdir -p $INPDIR
+RUN mkdir -p $OUTDIR
+RUN mkdir -p $SCRDIR
+RUN mkdir -p BKUPDIR
 
 COPY ./scripts $SCRDIR
