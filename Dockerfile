@@ -14,8 +14,8 @@
  && apt-get install -y software-properties-common \
     tesseract-ocr-all \
     vim \
-    ImageMagick \
-    poppler
+    imagemagick \
+    poppler-utils
 
 
 RUN mkdir /home/work
