@@ -28,6 +28,6 @@ ENV BKUPDIR /home/bkupdir
 RUN mkdir -p $INPDIR
 RUN mkdir -p $OUTDIR
 RUN mkdir -p $SCRDIR
-RUN mkdir -p BKUPDIR
+RUN mkdir -p $BKUPDIR
 
 COPY ./scripts $SCRDIR
