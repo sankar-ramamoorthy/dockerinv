@@ -1,5 +1,5 @@
-cd $OUTDIR
-for file in $INPDIR/*.pdf
+cd $INDIR
+for file in *.pdf
 do
   infilename=$file
   filenamestem="$infilename%.*}"

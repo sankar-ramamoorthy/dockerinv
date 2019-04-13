@@ -31,3 +31,4 @@ RUN mkdir -p $SCRDIR
 RUN mkdir -p $BKUPDIR
 
 COPY ./scripts $SCRDIR
+RUN chmod a+x /home/scrdir/run1.sh
