@@ -1,4 +1,4 @@
-cd $INDIR
+cd $INPDIR
 for file in *.pdf
 do
   infilename=$file
