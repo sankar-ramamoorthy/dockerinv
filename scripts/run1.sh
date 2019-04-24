@@ -2,7 +2,7 @@ cd $INPDIR
 for file in *.pdf
 do
   infilename=$file
-  filenamestem="$infilename%.*}"
+  filenamestem="${infilename%.*}"
   pngfilename="$filenamestem"".png"
   errfilename="$filenamestem"".err"
   tifffilename="$filenamestem"".tiff"

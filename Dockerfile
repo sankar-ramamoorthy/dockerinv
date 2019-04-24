@@ -20,6 +20,7 @@
 
 RUN mkdir /home/work
 WORKDIR /home/work
+ENV WORKDIR /home/work
 ENV INPDIR  /home/indir
 ENV OUTDIR /home/outdir
 ENV SCRDIR /home/scrdir
